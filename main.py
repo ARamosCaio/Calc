@@ -37,7 +37,7 @@ def Calculate(event):
         elif button == "!":
             def fact(n): return 1 if n == 0 else n*fact(n-1) 
             inp.set(str(fact(int(inp.get())))) 
-        elif button == "<-":
+        elif button == "Del":
             inp.set(inp.get()[:len(inp.get())-1]) 
         elif button == "=":  
             ans_to_print = str(eval(inp.get())) 
