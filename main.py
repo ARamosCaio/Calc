@@ -11,7 +11,7 @@ myFont = font.Font(size=12)
 
 screen = Entry(root, text=inp, width=46, justify='right', font=10, bd=4)
 screen.grid(row=0, columnspan=4, padx=5, pady=30, ipady=30) 
-key_matrix = [["c", u"\u221A", "/", "Del"],  
+key_matrix = [["Clear", u"\u221A", "/", "Del"],  
               ["7", "8", "9", "*"], 
               ["4", "5", "6", "-"],  
               ["1", "2", "3", "+"], 
@@ -32,7 +32,7 @@ def Calculate(event):
             ans = float(inp.get())**(0.5) 
             ans_to_print = str(ans) 
             inp.set(str(ans)) 
-        elif button == "c":
+        elif button == "Clear":
             inp.set("") 
         elif button == "!":
             def fact(n): return 1 if n == 0 else n*fact(n-1) 
