@@ -12,7 +12,7 @@ myFont = font.Font(size=12)
 screen = Entry(root, text=inp, width=46, justify='right', font=10, bd=4)
 screen.grid(row=0, columnspan=4, padx=5, pady=30, ipady=30) 
 key_matrix = [["Clear", u"\u221A", "/", "Del"],  
-              ["7", "8", "9", "*"], 
+              ["7", "8", "9", "x"], 
               ["4", "5", "6", "-"],  
               ["1", "2", "3", "+"], 
               ["!", 0, ".", "="]] 
